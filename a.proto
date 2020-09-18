@@ -1,0 +1,14 @@
+package message;
+
+message Person {
+	required string name = 1;
+	optional string email = 2;
+	optional uint64 aa = 3;
+	optional bytes blob = 4;
+
+	message Pos {
+		required int32 x = 5;
+		required int32 y = 6;
+	}
+	repeated Pos pos = 7;
+}
